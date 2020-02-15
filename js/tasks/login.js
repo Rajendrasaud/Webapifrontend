@@ -26,7 +26,6 @@ $(document).ready(function () {
 
                     localStorage.setItem('token', res.token);
                     localStorage.setItem('user_id', res.id);
-                    alert(localStorage.getItem('user_id'));
                     if (res.user_type == 'user') {
                         window.location.href = "index.html";
                     } else if (res.user_type == 'admin') {
